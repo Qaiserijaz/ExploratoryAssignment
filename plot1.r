@@ -2,8 +2,8 @@
 
 link = 'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
 if (!file.exists('./exdata%2Fdata%2Fhousehold_power_consumption.zip')){
-        download.file(link,'./exdata%2Fdata%2Fhousehold_power_consumption.zip', mode = 'wb')
-        unzip("exdata%2Fdata%2Fhousehold_power_consumption.zip", exdir = getwd())
+  download.file(link,'./exdata%2Fdata%2Fhousehold_power_consumption.zip', mode = 'wb')
+  unzip("exdata%2Fdata%2Fhousehold_power_consumption.zip", exdir = getwd())
 }
 
 ## Read the data by keeping Date and Time as Characters and remaining numeric
